@@ -1,12 +1,13 @@
-from app import Util
-import aiml,sys
+#from app import Util
+import aiml
+import sys
 
 
 def main():
 
     #create and configurate bot knowledbase
     ctfbot = aiml.Kernel()
-    ctfbot.learn("aiml/knowledgebase.aiml")
+    ctfbot.learn("resources/knowledgebase.aiml")
 
     while True:
 
@@ -16,7 +17,8 @@ def main():
 
         response = ctfbot.respond(question)
 
-        print( Util.formatOutPut(response))
+ #       print( Util.formatOutPut(response))
+        print(response)
 
 
 

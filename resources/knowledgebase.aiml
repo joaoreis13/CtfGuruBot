@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aiml version="1.0.1">
-  <!-- insert your AIML categories here -->
-   <category>
+<aiml version="1.0.1"><!-- insert your AIML categories here -->
+<category>
     <pattern>OLA</pattern>
-    <template>
-        <random>
-            <li>Ola, em que posso ajuda-lo?</li>
-            <li>Fala champz!</li>
-            <li>E ae kbuloso!</li>
-            <li>yo</li>
-        </random>
-    </template>
+        <template>
+            <random>
+                <li>Ola, em que posso ajuda-lo?</li>
+                <li>Fala champz!</li>
+                <li>E ae kbuloso!</li>
+                <li>yo</li>
+            </random>
+        </template>
 </category>
 
 <category>
@@ -51,8 +49,8 @@
     <template>
         <think> <set name="thing"> <star index="2"/> </set> </think>
 
-        <condition name="thing" value="* CTF *">
-            <srai>COMO FUNCIONA</srai>
+        <condition name="thing" value="CTF">
+            <srai>COMO FUNCIONA <star index="2"/> </srai>
         </condition>
         <condition name="thing" value="*">
             <![CDATA[Mano, eu frago de CTFs, sapoha ai vc vai ter que ver com outro bot...]]>
@@ -103,13 +101,13 @@
     <template></template>
 </category>
 <category>
-    <pattern>VOCE GOSTA DE JOGAR CTF </pattern>
+    <pattern>VOCE * JOGAR * </pattern>
     <template>
         <random>
-        <li> <![CDATA[Cara, eu sou um bot, nao posso jogar CTF!]]></li>
-        <li> <![CDATA[hahahaha, ta maluco? bots nao podem jogar! e voce, joga?]]></li>
+        <li> <!--<![CDATA[ --> Cara, eu sou um bot, nao posso jogar <star index="2"/>!<!--]]--></li>
+        <!--<li> <![CDATA[hahahaha, ta maluco? bots nao podem jogar! e voce, joga?]]></li>
         <li><![CDATA[naaahh, me expulsaram. Era muito melhor que qualquer humano, agora nao querem competir comigo]]></li>
-        <li><![CDATA[duuuhhh, desde quando bot vai jogar CTF?]]></li>
+        <li><![CDATA[duuuhhh, desde quando bot vai jogar CTF?]]></li>-->
         </random>
     </template>
 </category>
