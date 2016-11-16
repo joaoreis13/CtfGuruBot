@@ -1,4 +1,6 @@
 <aiml version="1.0.1"><!-- insert your AIML categories here -->
+
+<!--======SESSION: GREETINGS=====-->
 <category>
     <pattern>OLA</pattern>
         <template>
@@ -11,6 +13,7 @@
         </template>
 </category>
 
+<!--========SESSION: DEFINITON========-->
 <category>
     <pattern>O QUE E CTF</pattern>
     <template>
@@ -18,6 +21,7 @@
         <random>
             <li><![CDATA[O nome, traduzido literalmente, e Captura a Bandeira. Essa competiçao tem por objetivo encontrar tais 'bandeiras', ou informaçoes específicas em determinados problemas.]]> </li>
             <li> <![CDATA[Uma competiçao onde voce tem que resolver desafios e quebra cabeças que podem ser de qualquer natureza, desde achar uma mensagem escondida na sala,enviar uma foto em uma rede social e ate mesmo usar tecnicas de invasao de sistemas, criptografia, engenharia reversa, analise forense, etc.]]></li>
+            <li> <![CDATA[ CTF significa Capture the Flag. No âmbito da informática, são competições que envolvem diversas competências dos profissionais/estudantes/entusiastas para a resolução de desafios relacionados à infosec (segurança da informação), com o objetivo de capturar a bandeira (normalmente um código) e pontuar. Sacou, champz?]]></li>
         </random>
 
     </template>
@@ -30,6 +34,59 @@
     </template>
 </category>
 
+<category>
+    <pattern>DE QUALE QUE E ESSE TREM DE CTF *</pattern>
+    <template>
+       <srai>O QUE E CTF</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>QUE * E ESSE DE CTF</pattern>
+    <template>
+       <srai>O QUE E CTF</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>QUE * E ESSA DE CTF</pattern>
+    <template>
+       <srai>O QUE E CTF</srai>
+    </template>
+</category>
+
+<!--=========SESSION: TYPES==========-->
+
+<category>
+    <pattern>QUAIS TIPOS DE CTF EXISTEM</pattern>
+    <template>
+        <![CDATA[Basicamente tem dois tipos: attack/defense e jeopardy. No attack/defense cada jogador ou time recebe uma máquina com alguns serviços e deve proteger esses serviços aplicando patches enquanto ataca os adversarios para obeter acesso aos seus servidores. No tipo jeopardy são "perguntas" e respostas. São apresentados problemas para serem resolvidos e se obter uma resposta que é a flag.]]>
+    </template>
+</category>
+
+<category>
+    <pattern>QUE TIPO DE CTF QUE TEM</pattern>
+    <template>
+        <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>QUAL O FORMATO DESSE TIPO DE COMPETICAO</pattern>
+    <template>
+        <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>QUE TIPO DE CTF QUE TEM</pattern>
+    <template>
+        <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
+    </template>
+</category>
+
+
+<!--=========SESSION: HOW IT WORKS==========-->
 <category>
     <pattern>COMO FUNCIONA</pattern>
     <template>
@@ -45,40 +102,37 @@
 </category>
 
 <category>
-    <pattern>COMO * FUNCIONA *</pattern>
+    <pattern>COMO FUNCIONA * CTF</pattern>
     <template>
-        <think> <set name="thing"> <star index="2"/> </set> </think>
-
-        <condition name="thing" value="CTF">
-            <srai>COMO FUNCIONA <star index="2"/> </srai>
-        </condition>
-        <condition name="thing" value="*">
-            <![CDATA[Mano, eu frago de CTFs, sapoha ai vc vai ter que ver com outro bot...]]>
-        </condition>  
+        <srai>COMO FUNCIONA</srai>
     </template>
 </category>
 
 <category>
-    <pattern>COMO * FUNCIONA</pattern>
+    <pattern>* FUNCIONAMENTO * CTF</pattern>
     <template>
-        <srai>COMO FUNCIONA</srai>  
+        <srai>COMO FUNCIONA</srai>
+    </template>
+</category>
+
+
+<!--=========SESSION: HOW TO PLAY==========-->
+<category>
+    <pattern>COMO JOGA CTF</pattern>
+    <template>
+        <random> <![CDATA[Depende champz, CTFs do tipo jeopardy voce vai receber varios desafios e precisa resolve-los para pegar a flag. Em CTFs de attack/defense voce vai precisar explorar falhas dos serviços de seus adversarios enquanto aplica patches nos seus serviços.]]> </random>
+
+        <random><![CDATA[Bom, no caso de CTFs dentro do contexto de informatica, voce precisara de um computador. Com ferramentas prontas ou construidas por voce instaladas nele que voce ira trabalhar pra resolver os problemas.]]></random>>
+
+        <random><![CDATA[Seja criativo, serao dados os problemas e, como voce vai resolver e somente da sua conta! Mas recomendo ter ao menos um computador.]]></random>
+
     </template>
 </category>
 
 <category>
-    <pattern>COMO FUNCIONA * </pattern>
-    <template>
-        <srai>COMO FUNCIONA</srai>  
-    </template>
+    <pattern>
 </category>
 
-
-<category>
-    <pattern>COMO * JOGA * CTF</pattern>
-    <template>
-        <![CDATA[Depende champz, CTFs do tipo jeopardy vocE vai receber varios desafios e precisa resolvE-los para pegar a flag. Em CTFs de attack/defense vocE vai precisar explorar falhas dos serviços de seus adversarios. Nos dois casos o ideal e um computador com ferramenta de desenvolvimento, debugging, engenharia reversa...]]>
-    </template>
-</category>
 
 <category>
     <pattern>ONDE * JOGA * CTF</pattern>
@@ -115,15 +169,6 @@
     <pattern>VOCE JOGA * </pattern>
     <template>
         <srai> VOCE GOSTA DE JOGAR <star/> </srai>
-    </template>
-</category>
-
-
-
-<category>
-    <pattern>QUAIS TIPOS DE CTF EXISTEM</pattern>
-    <template>
-        <![CDATA[Basicamente tem dois tipos: attack/defense e jeopardy. No attack/defense cada jogador ou time recebe uma máquina com alguns serviços e deve proteger esses serviços aplicando patches enquanto ataca os adversarios para obeter acesso aos seus servidores. No tipo jeopardy são "pergutas" e respostas. São apresentados problemas para serem resolvidos e se obter uma resposta que é a flag.]]>
     </template>
 </category>
     
