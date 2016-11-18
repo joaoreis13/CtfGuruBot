@@ -122,34 +122,83 @@
     <template>
         <random> <![CDATA[Depende champz, CTFs do tipo jeopardy voce vai receber varios desafios e precisa resolve-los para pegar a flag. Em CTFs de attack/defense voce vai precisar explorar falhas dos serviços de seus adversarios enquanto aplica patches nos seus serviços.]]> </random>
 
-        <random><![CDATA[Bom, no caso de CTFs dentro do contexto de informatica, voce precisara de um computador. Com ferramentas prontas ou construidas por voce instaladas nele que voce ira trabalhar pra resolver os problemas.]]></random>>
+        <random><![CDATA[Bom, no caso de CTFs dentro do contexto de informatica, voce precisara de um computador com ferramentas prontas, ou construidas por voce, instaladas nele que voce ira usar pra resolver os problemas.]]></random>>
 
         <random><![CDATA[Seja criativo, serao dados os problemas e, como voce vai resolver e somente da sua conta! Mas recomendo ter ao menos um computador.]]></random>
-
     </template>
 </category>
 
 <category>
-    <pattern>
+    <pattern>COMO * JOGA CTF</pattern>
+    <template>
+        <srai>COMO JOGA CTF</srai>
+    </template>
 </category>
 
+<category>
+    <pattern>COMO * JOGA * CTF</pattern>
+    <template>
+        <srai>COMO JOGA CTF</srai>
+    </template>
+</category>
+
+<!-- ==================SESSION: WHERE TO PLAY ================ -->
+<category>
+    <pattern>ONDE JOGA CTF</pattern>
+    <template>
+        <random> <![CDATA[Na maioria das vezes sao competiçoes on line, a publicaçao e por conta do organizador do CTF. Voce pode caçar pela internet eventos que estao para ocorrer. Alguns eventos tambem acontecem presencialmente, o maior da america latina e o HackFlag, que passa por mais de 16 cidades do Brasil.]]> </random>
+
+        <random><![CDATA[Vai depender do CTF, tem CTF local,ai tem que ir ate o lugar onde ele ira ocorrer, tem CTF que voce joga usando a internet mesmo]]></random>
+
+        <random><![CDATA[Se voce quer saber em quais sites voce pode jogar, experimenta dar uma olhada aqui:\nhttps://captf.com/practice-ctf/ . Tirando isso a pagina do CTF-Time tem uma agenda de eventos do mundo todo.]]></random>
+    </template>
 
 <category>
     <pattern>ONDE * JOGA * CTF</pattern>
     <template>
-        <![CDATA[Na maioria das vezes sao competiçoes on line, a publicaçao e por conta do organizador do CTF. VocE pode caçar pela internet eventos que estao para ocorrer. Alguns eventos tambem acontecem presencialmente, o maior da america latina e o HackFlag, que passa por mais de 16 cidades do Brasil.]]>
+        <srai>ONDE JOGA CTF</srai>
     </template>
 </category>
+
+<category>
+    <pattern>ONDE * JOGAR * CTF</pattern>
+    <template>
+        <srai> ONDE JOGA</srai>
+    </template>
+</category>
+
+<!--==============SESSION: WHERE PRACTICE-->
+</category>
+<category>
+    <pattern>ONDE TREINO</pattern>
+    <template>
+        <![CDATA[Bem, exitem alguns sites que voce pode treinar CTFs':\n\thttp://ctf.sucurihc.org\n\thttps://shellterlabs.com/pt-br/\nEu gosto tambem desse site aqui:\n\thttps://captf.com/practice-ctf/\ntem muitos links de sites de treinamento.]]>
+    </template>
+</category>
+
 <category>
     <pattern>ONDE * TREINAR * CTF</pattern>
     <template>
-        <![CDATA[Bem, exitem alguns sites que vocE pode treinar:\n\thttp://ctf.sucurihc.org\n\thttps://shellterlabs.com/pt-br/\nEu gosto tambem desse site aqui:\n\thttps://captf.com/practice-ctf/\ntem muitos links de sites de treinamento.]]>
+        <srai>ONDE TREINO</srai>    
     </template>
 </category>
+
+<category>
+    <pattern>ONDE * TREINAR *</pattern>
+    <template>
+        <srai>ONDE TREINO</srai>
+    </template>
+</category>
+
+<!--================SESSION: HOW TO PRACTICE===============-->
 <category>
     <pattern>COMO TREINO PARA JOGAR</pattern>
-    <template><srai>ONDE * TREINAR * CTF</srai> </template>
+    <template>
+        <![CDATA[Cara, tem que jogar. Nao adianta ficar so estudando ou com praticas isoladas. Claro, existem alguns sites que voce pode usar pra treino, mas nao fique so nisso. Na pratica, a teoria e outra!]]>
+    </template>
 </category>
+
+
 <category>
     <pattern>QUEM PODE JOGAR * </pattern>
     <template></template>
