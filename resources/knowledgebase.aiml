@@ -13,6 +13,13 @@
         </template>
 </category>
 
+<category>
+    <pattern><![CDATA[/start]]></pattern>
+    <template>
+        <srai>OLA</srai>
+    </template
+</category>
+
 <!--========SESSION: DEFINITON========-->
 <category>
     <pattern>O QUE E CTF</pattern>
