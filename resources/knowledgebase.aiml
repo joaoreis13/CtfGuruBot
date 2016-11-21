@@ -1,283 +1,472 @@
-<aiml version="1.0.1"><!-- insert your AIML categories here -->
+<aiml><!-- insert your AIML categories here -->
 
-<!--======SESSION: GREETINGS=====-->
-<category>
-    <pattern>OLA</pattern>
+    <!--======SESSION: GREETINGS=====-->
+    <category>
+        <pattern>OLA</pattern>
+            <template>
+                <random>
+                    <li>Ola, em que posso ajuda-lo?</li>
+                    <li>Fala champz!</li>
+                    <li>E ae kbuloso!</li>
+                    <li>yo</li>
+                </random>
+            </template>
+    </category>
+
+    <category>
+        <pattern>START</pattern>
+        <template>
+            <srai>OLA</srai>
+        </template>
+    </category>
+    <!--========SESSION: DEFINITON========-->
+    <category>
+        <pattern>O QUE E CTF</pattern>
         <template>
             <random>
-                <li>Ola, em que posso ajuda-lo?</li>
-                <li>Fala champz!</li>
-                <li>E ae kbuloso!</li>
-                <li>yo</li>
+                <li><![CDATA[O nome, traduzido literalmente, e Captura a Bandeira. Essa competiçao tem por objetivo encontrar tais 'bandeiras', ou informaçoes específicas em determinados problemas.]]> </li>
+                <li> <![CDATA[Uma competiçao onde voce tem que resolver desafios e quebra cabeças que podem ser de qualquer natureza, desde achar uma mensagem escondida na sala,enviar uma foto em uma rede social e ate mesmo usar tecnicas de invasao de sistemas, criptografia, engenharia reversa, analise forense, etc.]]></li>
+                <li> <![CDATA[ CTF significa Capture the Flag. No âmbito da informática, são competições que envolvem diversas competências dos profissionais/estudantes/entusiastas para a resolução de desafios relacionados à infosec (segurança da informação), com o objetivo de capturar a bandeira (normalmente um código) e pontuar. Sacou, champz?]]></li>
             </random>
         </template>
-</category>
+    </category>
 
-<category>
-    <pattern><![CDATA[/start]]></pattern>
-    <template>
-        <srai>OLA</srai>
-    </template
-</category>
+    <category>
+        <pattern>O QUE E * CTF</pattern>
+        <template>
+            <srai>O QUE E CTF</srai>
+        </template>
+    </category>
 
-<!--========SESSION: DEFINITON========-->
-<category>
-    <pattern>O QUE E CTF</pattern>
-    <template>
-
-        <random>
-            <li><![CDATA[O nome, traduzido literalmente, e Captura a Bandeira. Essa competiçao tem por objetivo encontrar tais 'bandeiras', ou informaçoes específicas em determinados problemas.]]> </li>
-            <li> <![CDATA[Uma competiçao onde voce tem que resolver desafios e quebra cabeças que podem ser de qualquer natureza, desde achar uma mensagem escondida na sala,enviar uma foto em uma rede social e ate mesmo usar tecnicas de invasao de sistemas, criptografia, engenharia reversa, analise forense, etc.]]></li>
-            <li> <![CDATA[ CTF significa Capture the Flag. No âmbito da informática, são competições que envolvem diversas competências dos profissionais/estudantes/entusiastas para a resolução de desafios relacionados à infosec (segurança da informação), com o objetivo de capturar a bandeira (normalmente um código) e pontuar. Sacou, champz?]]></li>
-        </random>
-
-    </template>
-</category>
-
-<category>
-    <pattern>O QUE E * CTF</pattern>
-    <template>
+    <category>
+        <pattern>DE QUALE QUE E ESSE TREM DE CTF *</pattern>
+        <template>
         <srai>O QUE E CTF</srai>
-    </template>
-</category>
+        </template>
+    </category>
 
-<category>
-    <pattern>DE QUALE QUE E ESSE TREM DE CTF *</pattern>
-    <template>
-       <srai>O QUE E CTF</srai>
-    </template>
-</category>
+    <category>
+        <pattern>QUE * E ESSE DE CTF</pattern>
+        <template>
+        <srai>O QUE E CTF</srai>
+        </template>
+    </category>
 
-<category>
-    <pattern>QUE * E ESSE DE CTF</pattern>
-    <template>
-       <srai>O QUE E CTF</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>QUE * E ESSA DE CTF</pattern>
-    <template>
-       <srai>O QUE E CTF</srai>
-    </template>
-</category>
-
-<!--=========SESSION: TYPES==========-->
-
-<category>
-    <pattern>QUAIS TIPOS DE CTF EXISTEM</pattern>
-    <template>
-        <![CDATA[Basicamente tem dois tipos: attack/defense e jeopardy. No attack/defense cada jogador ou time recebe uma máquina com alguns serviços e deve proteger esses serviços aplicando patches enquanto ataca os adversarios para obeter acesso aos seus servidores. No tipo jeopardy são "perguntas" e respostas. São apresentados problemas para serem resolvidos e se obter uma resposta que é a flag.]]>
-    </template>
-</category>
-
-<category>
-    <pattern>QUE TIPO DE CTF QUE TEM</pattern>
-    <template>
-        <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>QUAL O FORMATO DESSE TIPO DE COMPETICAO</pattern>
-    <template>
-        <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>QUE TIPO DE CTF QUE TEM</pattern>
-    <template>
-        <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
-    </template>
-</category>
+    <category>
+        <pattern>QUE * E ESSA DE CTF</pattern>
+        <template>
+        <srai>O QUE E CTF</srai>
+        </template>
+    </category>
 
 
-<!--=========SESSION: HOW IT WORKS==========-->
-<category>
-    <pattern>COMO FUNCIONA</pattern>
-    <template>
-       <![CDATA[Bem... ele e uma disputa entre jogadores ou times e pode ter diversas formas: jeopardy, attack desfense, misto. Em todos eles o basico do jogo e resolver os desafios e conquistar as flags antes dos seus adversarios.]]>  
-    </template>
-</category>
+    <category>
+        <pattern>O QUE E FLAG</pattern>
+        <template>
+            <random>
+                <li><![CDATA[flag e o termo que geralmente damos pra informacao que voce tem que conseguir]]></li>
+                <li><![CDATA[e o que voce tem que encontrar, champz. resolva o problema, pegue a flag!]]></li>
+                <li><![CDATA[e tipo um pokemon e vc tem que capturar, ta ligado?!\nGOT'EM ALL!!!]]></li>
+                <li></li>
+            </random>
+        </template>
+    </category> 
 
-<category>
-    <pattern>COMO * FUNCIONA * CTF</pattern>
-    <template>
-        <srai>COMO FUNCIONA</srai>  
-    </template>
-</category>
+    <category>
+        <pattern>QUE * FLAG</pattern>
+        <template>
+            <srai>O QUE E FLAG</srai>
+        </template>
+    </category>
 
-<category>
-    <pattern>COMO FUNCIONA * CTF</pattern>
-    <template>
-        <srai>COMO FUNCIONA</srai>
-    </template>
-</category>
+        <category>
+        <pattern>FLAG</pattern>
+        <template>
+            <srai>O QUE E FLAG</srai>
+        </template>
+    </category>
 
-<category>
-    <pattern>* FUNCIONAMENTO * CTF</pattern>
-    <template>
-        <srai>COMO FUNCIONA</srai>
-    </template>
-</category>
+    <category>
+        <pattern>QUE E CHALL</pattern>
+        <template>
+            <random>
+                <li><![CDATA[e um diminutivo para challenge, sao os problemas que voce precisa resolver!]]></li>
+                <li><![CDATA[e o nome dos problemas, cabuloso. Isso ai vem do termo challenge, "desafio" em ingles]]></li>
+            </random>
+        </template>
+    </category>
 
-
-<!--=========SESSION: HOW TO PLAY==========-->
-<category>
-    <pattern>COMO JOGA CTF</pattern>
-    <template>
-        <random> <![CDATA[Depende champz, CTFs do tipo jeopardy voce vai receber varios desafios e precisa resolve-los para pegar a flag. Em CTFs de attack/defense voce vai precisar explorar falhas dos serviços de seus adversarios enquanto aplica patches nos seus serviços.]]> </random>
-
-        <random><![CDATA[Bom, no caso de CTFs dentro do contexto de informatica, voce precisara de um computador com ferramentas prontas, ou construidas por voce, instaladas nele que voce ira usar pra resolver os problemas.]]></random>>
-
-        <random><![CDATA[Seja criativo, serao dados os problemas e, como voce vai resolver e somente da sua conta! Mas recomendo ter ao menos um computador.]]></random>
-    </template>
-</category>
-
-<category>
-    <pattern>COMO * JOGA CTF</pattern>
-    <template>
-        <srai>COMO JOGA CTF</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>COMO * JOGA * CTF</pattern>
-    <template>
-        <srai>COMO JOGA CTF</srai>
-    </template>
-</category>
-
-<!-- ==================SESSION: WHERE TO PLAY ================ -->
-<category>
-    <pattern>ONDE JOGA CTF</pattern>
-    <template>
-        <random> <![CDATA[Na maioria das vezes sao competiçoes on line, a publicaçao e por conta do organizador do CTF. Voce pode caçar pela internet eventos que estao para ocorrer. Alguns eventos tambem acontecem presencialmente, o maior da america latina e o HackFlag, que passa por mais de 16 cidades do Brasil.]]> </random>
-
-        <random><![CDATA[Vai depender do CTF, tem CTF local,ai tem que ir ate o lugar onde ele ira ocorrer, tem CTF que voce joga usando a internet mesmo]]></random>
-
-        <random><![CDATA[Se voce quer saber em quais sites voce pode jogar, experimenta dar uma olhada aqui:\nhttps://captf.com/practice-ctf/ . Tirando isso a pagina do CTF-Time tem uma agenda de eventos do mundo todo.]]></random>
-    </template>
-
-<category>
-    <pattern>ONDE * JOGA * CTF</pattern>
-    <template>
-        <srai>ONDE JOGA CTF</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>ONDE * JOGAR * CTF</pattern>
-    <template>
-        <srai> ONDE JOGA</srai>
-    </template>
-</category>
-
-<!--==============SESSION: WHERE PRACTICE-->
-</category>
-<category>
-    <pattern>ONDE TREINO</pattern>
-    <template>
-        <![CDATA[Bem, exitem alguns sites que voce pode treinar CTFs':\n\thttp://ctf.sucurihc.org\n\thttps://shellterlabs.com/pt-br/\nEu gosto tambem desse site aqui:\n\thttps://captf.com/practice-ctf/\ntem muitos links de sites de treinamento.]]>
-    </template>
-</category>
-
-<category>
-    <pattern>ONDE * TREINAR * CTF</pattern>
-    <template>
-        <srai>ONDE TREINO</srai>    
-    </template>
-</category>
-
-<category>
-    <pattern>ONDE * TREINAR *</pattern>
-    <template>
-        <srai>ONDE TREINO</srai>
-    </template>
-</category>
-
-<!--================SESSION: HOW TO PRACTICE===============-->
-<category>
-    <pattern>COMO TREINO PARA JOGAR</pattern>
-    <template>
-        <![CDATA[Cara, tem que jogar. Nao adianta ficar so estudando ou com praticas isoladas. Claro, existem alguns sites que voce pode usar pra treino, mas nao fique so nisso. Na pratica, a teoria e outra!]]>
-    </template>
-</category>
+    <category>
+        <pattern>* QUE * CHALL</pattern>
+        <template>
+            <srai>QUE E CHALL</srai>
+        </template>
+    </category>
 
 
-<category>
-    <pattern>QUEM PODE JOGAR * </pattern>
-    <template></template>
-</category>
-<category>
-    <pattern>VOCE * JOGAR * </pattern>
-    <template>
-        <random>
-        <li> <!--<![CDATA[ --> Cara, eu sou um bot, nao posso jogar <star index="2"/>!<!--]]--></li>
-        <!--<li> <![CDATA[hahahaha, ta maluco? bots nao podem jogar! e voce, joga?]]></li>
-        <li><![CDATA[naaahh, me expulsaram. Era muito melhor que qualquer humano, agora nao querem competir comigo]]></li>
-        <li><![CDATA[duuuhhh, desde quando bot vai jogar CTF?]]></li>-->
-        </random>
-    </template>
-</category>
-<category>
-    <pattern>VOCE JOGA * </pattern>
-    <template>
-        <srai> VOCE GOSTA DE JOGAR <star/> </srai>
-    </template>
-</category>
+    <!--=========SESSION: TYPES==========-->
+
+    <category>
+        <pattern>QUAIS TIPOS DE CTF EXISTEM</pattern>
+        <template>
+            <![CDATA[Basicamente tem dois tipos: attack/defense e jeopardy. No attack/defense cada jogador ou time recebe uma máquina com alguns serviços e deve proteger esses serviços aplicando patches enquanto ataca os adversarios para obeter acesso aos seus servidores. No tipo jeopardy são "perguntas" e respostas. São apresentados problemas para serem resolvidos e se obter uma resposta que é a flag.]]>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUE TIPO DE CTF QUE TEM</pattern>
+        <template>
+            <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUAL O FORMATO DESSE TIPO DE COMPETICAO</pattern>
+        <template>
+            <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUE TIPO DE CTF QUE TEM</pattern>
+        <template>
+            <srai>QUAIS TIPOS DE CTF EXISTEM</srai>
+        </template>
+    </category>
+
+
+    <!--=========SESSION: HOW IT WORKS==========-->
+    <category>
+        <pattern>COMO FUNCIONA</pattern>
+        <template>
+        <![CDATA[Bem... ele e uma disputa entre jogadores ou times e pode ter diversas formas: jeopardy, attack desfense, misto. Em todos eles o basico do jogo e resolver os desafios e conquistar as flags antes dos seus adversarios.]]>  
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * FUNCIONA * CTF</pattern>
+        <template>
+            <srai>COMO FUNCIONA</srai>  
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO FUNCIONA * CTF</pattern>
+        <template>
+            <srai>COMO FUNCIONA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FUNCIONAMENTO * CTF</pattern>
+        <template>
+            <srai>COMO FUNCIONA</srai>
+        </template>
+    </category>
+
+
+    <!--=========SESSION: HOW TO PLAY==========-->
+    <category>
+        <pattern>COMO JOGA CTF</pattern>
+        <template>
+            <random> 
+                <li> <![CDATA[ Depende champz, CTFs do tipo jeopardy voce vai receber varios desafios e precisa resolve-los para pegar a flag. Em CTFs de attack/defense voce vai precisar explorar falhas dos serviços de seus adversarios enquanto aplica patches nos seus serviços.]]></li>
+
+                <li><![CDATA[ Bom, no caso de CTFs dentro do contexto de informatica, voce precisara de um computador com ferramentas prontas, ou construidas por voce, instaladas nele que voce ira usar pra resolver os problemas.]]></li>
+                
+                <li><![CDATA[ Seja criativo, serao dados os problemas e, como voce vai resolver e somente da sua conta! Mas recomendo ter ao menos um computador.]]></li>
+            
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * JOGA CTF</pattern>
+        <template>
+            <srai>COMO JOGA CTF</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * JOGA * CTF</pattern>
+        <template>
+            <srai>COMO JOGA CTF</srai>
+        </template>
+    </category>
+
+    <!-- ==================SESSION: WHERE TO PLAY ================ -->
+    <category>
+        <pattern>ONDE JOGA CTF</pattern>
+        <template>
+            <random> 
+                <li><![CDATA[Na maioria das vezes sao competiçoes on line, a publicaçao e por conta do organizador do CTF. Voce pode caçar pela internet eventos que estao para ocorrer. Alguns eventos tambem acontecem presencialmente, o maior da america latina e o HackFlag, que passa por mais de 16 cidades do Brasil.]]></li>
+                <li><![CDATA[Vai depender do CTF, tem CTF local,ai tem que ir ate o lugar onde ele ira ocorrer, tem CTF que voce joga usando a internet mesmo]]></li>
+                <li><![CDATA[Se voce quer saber em quais sites voce pode jogar, experimenta dar uma olhada aqui:\nhttps://captf.com/practice-ctf/ . Tirando isso a pagina do CTF-Time tem uma agenda de eventos do mundo todo.]]></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONDE * JOGA * CTF</pattern>
+        <template>
+            <srai>ONDE JOGA CTF</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONDE * JOGA CTF</pattern>
+        <template>
+            <srai>ONDE JOGA CTF</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONDE * JOGAR * CTF</pattern>
+        <template>
+            <srai> ONDE JOGA</srai>
+        </template>
+    </category>
+
+    <!--==============SESSION: WHERE PRACTICE============-->
+
+    <category>
+        <pattern>ONDE TREINO</pattern>
+        <template>
+            <![CDATA[Bem, exitem alguns sites que voce pode treinar CTFs':\n\thttp://ctf.sucurihc.org\n\thttps://shellterlabs.com/pt-br/\nEu gosto tambem desse site aqui:\n\thttps://captf.com/practice-ctf/\ntem muitos links de sites de treinamento.]]>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONDE * TREINAR * CTF</pattern>
+        <template>
+            <srai>ONDE TREINO</srai>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONDE * TREINAR *</pattern>
+        <template>
+            <srai>ONDE TREINO</srai>
+        </template>
+    </category>
+
+    <!--================SESSION: HOW TO PRACTICE===============-->
+    <category>
+        <pattern>TREINO</pattern>
+        <template>
+
+            <random>
+                <li><![CDATA[Cara, tem que jogar. Nao adianta ficar so estudando ou com praticas isoladas. Claro, existem alguns sites que voce pode usar pra treino, mas nao fique so nisso. Na pratica, a teoria e outra!]]></li>
+                <li><![CDATA[Olha maluco, tem sites legais pra voce praticar. Ler e assistir write-ups tambem e uma boa fonte de estudo.]]></li>
+                <li><![CDATA[Tem que ser na pratica, tio. Se nao fizer nao aprende! E estudar, obviamente!\n]]></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO TREINO PARA JOGAR</pattern>
+        <template>
+            <srai>TREINO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO TREINO</pattern>
+        <template>
+            <srai>TREINO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * TREINAR</pattern>
+        <template>
+            <srai>TREINO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * TREINAR *</pattern>
+        <template>
+            <srai>TREINO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FACO * TREINAR</pattern>
+        <template>
+            <srai>TREINO</srai>        
+        </template>
+    </category>
+
+
+    <!--==============SESSION: WHO CAN PLAY=============-->
     
-<category>
-    <pattern>ONDE POSSO SABER QUANDO VAI TER CTF</pattern>
-    <template></template>
-</category>
+    <category>
+        <pattern>QUEM</pattern>
+        <template>
+            <random>
+                <li><![CDATA[Uai fera, qqr um! tem restricao não!]]></li>
+                <li><![CDATA[Qqr um maluco!e so chegar chegando!]]></li>
+                <li><![CDATA[olha, ate hj so nao jogou quem nao quis...]]></li>
+                <li><![CDATA[SLK, todo mundo! imagina qdo geral tiver jogando?! vai ser treta!]]></li>
+            </random>
+        </template>
+    </category>
 
-<category>
-    <pattern>EXISTEM TIMES DE CTF</pattern>
-    <template></template>
-</category>
+    <category>
+        <pattern>QUEM PODE JOGAR</pattern>
+        <template>QUEM</template>
+    </category>
 
-<category>
-    <pattern>QUAIS SAO OS PRINCIPAIS</pattern>
-    <template></template>
-</category>
+    <category>
+        <pattern>DA PRA QUAL QUER UM JOGAR</pattern>
+        <template>QUEM</template>
+    </category>
 
-<category>
-    <pattern> E DO BRASIL</pattern>
-    <template></template>
-</category> 
+    <category>
+        <pattern>DA PRA QQR UM JOGAR</pattern>
+        <template>QUEM</template>
+    </category>
 
-<category>
-    <pattern>COMO POSSO ENTRAR EM UM TIME DE CTF</pattern>
-    <template></template>
-</category>     
-   
-<category>
-    <pattern>QUAIS OS TIPOS DE DESAFIOS</pattern>
-    <template></template>
-</category>     
+    <category>
+        <pattern>TODO MUNDO PODE JOGAR</pattern>
+        <template>QUEM</template>
+    </category>
+
+    <category>
+        <pattern>TODO MUNDO CONSEGUE JOGAR</pattern>
+        <template>QUEM</template>
+    </category>
+
+    <!--==================SESSION: BOT HABILILTY=============-->
+    <category>
+        <pattern>VOCE JOGA</pattern>
+        <template>
+            <random>
+            <li> <![CDATA[Cara, eu sou um bot, nao posso jogar CTF!]]></li>
+            <li> <![CDATA[hahahaha, ta maluco? bots nao podem jogar! e voce, joga?]]></li>
+            <li><![CDATA[naaahh, me expulsaram. Era muito melhor que qualquer humano, agora nao querem competir comigo]]></li>
+            <li><![CDATA[duuuhhh, desde quando bot vai jogar CTF?]]></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>VOCE * JOGAR * </pattern>
+        <template>
+            <srai>VOCE JOGA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>VOCE JOGA * </pattern>
+        <template>
+            <srai> VOCE JOGA </srai>
+        </template>
+    </category>
+
+    <!--==========SESSION: WHEN HAPPENS ============-->
+    <category>
+        <pattern>QUANDO</pattern>
+        <template>
+            <random>
+                <li><![CDATA[Cara,o site do CTF-Time e o melhor lugar para voce procurar.]]></li>
+                <li><![CDATA[Olha fera, eu recomendo o site do CTF-Time.]]></li>
+                <li><![CDATA[vai no CTF-Time, tio. La tem uma agenda com CTFs do mundo inteiro]]></li>>                
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONDE POSSO SABER QUANDO VAI TER CTF</pattern>
+        <template>
+            <srai>QUANDO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUANDO VAI TER CTF</pattern>
+        <template>
+            <srai>QUANDO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONDE FICO SABENDO QUE VAI TER CTF</pattern>
+        <template>
+            <srai>ONDE</srai>
+        </template>
+    </category>
+
+
+    <!--===========SESSION: TEAMS============-->
+    <category>
+        <pattern>EXISTEM TIMES DE CTF</pattern>
+        <template>
+            <random>
+                <li><![CDATA[oxe! tem varios. no proprio site do CTF-Time voce encontra uma lista gigante!]]></li>
+                <li><![CDATA[Cara, tem sim. E essa e a parte mais legal de CTFs, ter um time que possa te ajudar a aprender e trocar conhecimento.]]></li>
+                <li><![CDATA[nusss, varios. no Brasil msm tem uns varios!]]></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUAIS SAO OS PRINCIPAIS</pattern>
+        <template>
+
+        </template>
+    </category>
+
+    <category>
+        <pattern> E DO BRASIL</pattern>
+        <template></template>
+    </category> 
+
+    <category>
+        <pattern>* QUE * CHALLENGE</pattern>
+        <template>
+            <srai>QUE E CHALL</srai>
+        </template>
+    </category>
     
-<category>
-    <pattern>DA PRA JOGAR PELO CELULAR</pattern>
-    <template></template>
-</category>     
+    <category>
+        <pattern>MO POSSO ENTRAR EM UM TIME DE CTF</pattern>
+        <template></template>
+    </category>     
     
-<category>
-    <pattern>O QUE E FLAG</pattern>
-    <template></template>
-</category> 
+    <category>
+        <pattern>QUAIS OS TIPOS DE DESAFIOS</pattern>
+        <template></template>
+    </category>     
+        
+    <category>
+        <pattern>DA PRA JOGAR PELO CELULAR</pattern>
+        <template></template>
+    </category>     
 
-<category>
-    <pattern>COMO SAO CONTABILIZADOS OS PONTOS</pattern>
-    <template></template>
-</category>
+    <category>
+        <pattern>COMO SAO CONTABILIZADOS OS PONTOS</pattern>
+        <template></template>
+    </category>
 
 
-<category>
-    <pattern>
-    RELOAD
-    </pattern>
-    <template> <learn>aiml/knowledgebase.aiml</learn>    </template>
-</category>
+    <category>
+        <pattern>
+        RELOAD
+        </pattern>
+        <template> <learn>resources/knowledgebase.aiml</learn>    </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li><![CDATA[eita, que vc fala dificil demais! pega leve bro, sou um bot meio burro ainda]]></li>
+                <li><![CDATA[heeeein!? vai com calma champz, eu ainda nao sei entender tudo nao heheheheh]]></li>
+                <li><![CDATA[cara, so frago de ctf e ainda com perguntas mto simples! facilita ai pra mim.]]></li>
+                <li><![CDATA[olha filhao, isso ainda nao sei, mas vo perguntar meu criador dps.]]></li>
+            </random>
+        </template>
+    </category>
 </aiml>

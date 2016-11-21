@@ -2,6 +2,17 @@
 import aiml
 import sys
 
+def formatOutPut(text):
+
+    text = text.replace('\\t','\t')
+    text = text.replace('\\n','\n')
+
+    return text
+
+def stripCommand(text):
+    if(text[0] == '/'):
+        return text[1:]
+    return text
 
 def main():
 
@@ -11,14 +22,14 @@ def main():
 
     while True:
 
-        question = input("> ")
+        question = stripCommand(input("> "))
         if question == 'quit':
             return 0
 
         response = ctfbot.respond(question)
 
  #       print( Util.formatOutPut(response))
-        print(response)
+        print(formatOutPut(response))
 
 
 
