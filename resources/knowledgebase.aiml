@@ -19,6 +19,28 @@
             <srai>OLA</srai>
         </template>
     </category>
+
+    <category>
+        <pattern>YO</pattern>
+        <template>
+            <srai>OLA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>AE, BOT</pattern>
+        <template>
+            <srai>OLA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NEM</pattern>
+        <template>
+            <![CDATA[nem o que?]]>
+        </template>
+    </category>
+    
     <!--========SESSION: DEFINITON========-->
     <category>
         <pattern>O QUE E CTF</pattern>
