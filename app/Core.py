@@ -25,7 +25,7 @@ def processMessage(content,bot):
 
     #check if the message is an error message and send report to selected user
     if text[0] == "#":
-        Util.reportUnkownSentence(text)
+        Util.reportUnknownSentence(text)
         text = text[1:]
 
     msg = {
