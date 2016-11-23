@@ -404,9 +404,9 @@
         <pattern>EXISTEM TIMES DE CTF</pattern>
         <template>
             <random>
-                <li><![CDATA[oxe! tem varios. no proprio site do CTF-Time voce encontra uma lista gigante!]]></li>
-                <li><![CDATA[Cara, tem sim. E essa e a parte mais legal de CTFs, ter um time que possa te ajudar a aprender e trocar conhecimento.]]></li>
-                <li><![CDATA[nusss, varios. no Brasil msm tem uns varios!]]></li>
+                <li><![CDATA[oxe! tem varios. no proprio site do CTF-Time voce encontra uma lista gigante!checa ai:\nhttps://ctftime.org/stats/2016/BR]]></li>
+                <li><![CDATA[Cara, tem sim. E essa e a parte mais legal de CTFs, ter um time que possa te ajudar a aprender e trocar conhecimento.Aqui vc consegue ver a lista dos times do Brasil:\nhttps://ctftime.org/stats/2016/BR]]></li>
+                <li><![CDATA[nusss, varios. no Brasil msm tem um punhado!Fraga ae:\nhttps://ctftime.org/stats/2016/BR]]></li>
             </random>
         </template>
     </category>
@@ -462,10 +462,12 @@
         <pattern>*</pattern>
         <template>
             <random>
-                <li><![CDATA[eita, que vc fala dificil demais! pega leve bro, sou um bot meio burro ainda]]></li>
-                <li><![CDATA[heeeein!? vai com calma champz, eu ainda nao sei entender tudo nao heheheheh]]></li>
-                <li><![CDATA[cara, so frago de ctf e ainda com perguntas mto simples! facilita ai pra mim.]]></li>
-                <li><![CDATA[olha filhao, isso ainda nao sei, mas vo perguntar meu criador dps.]]></li>
+                <li><![CDATA[#eita, que vc fala dificil demais! pega leve bro, sou um bot meio burro ainda]]></li>
+                <li><![CDATA[#heeeein!? vai com calma champz, eu ainda nao sei entender tudo nao heheheheh]]></li>
+                <li><![CDATA[#cara, so frago de ctf e ainda com perguntas mto simples! facilita ai pra mim.]]></li>
+                <li><![CDATA[#olha filhao, isso ainda nao sei, mas vo perguntar meu criador dps.]]></li>
+                <li><![CDATA[#Cara, se vc nao falar de CTF nao tenho como te ajudar]]></li>
+                <li><![CDATA[#Blz... e os CTFs mano? manja ou nem?]]></li>
             </random>
         </template>
     </category>

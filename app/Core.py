@@ -15,6 +15,7 @@ def processMessage(content,bot):
     msgFrom = content['from']
     session = msgFrom.split('@')[0]
 
+    #process the message to get the awnser
     if msgType == 'text/plain':
 
         text = Util.formatOutPut( bot.respond(msgText,session) )
@@ -22,7 +23,11 @@ def processMessage(content,bot):
     else:
         text = "Foi mal champz, não entendo esse tipo de mídia ainda. Manda uma msg ai!"
 
-    
+    #check if the message is an error message and send report to selected user
+    if text[0] == "#":
+        Util.reportUnkownSentence(text)
+        text = text[1:]
+
     msg = {
 
         'id' : str(uuid.uuid4()),
