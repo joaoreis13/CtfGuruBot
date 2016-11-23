@@ -15,16 +15,16 @@ def stripCommand(text):
 
 def reportUnknownSentence(text):
 
-     msg = {
+    msg = {
 
-        'id' : str(uuid.uuid4()),
-        'to' : app.config['REPORT_CONTACT'],
-        'type': 'text/plain',
-        'content' : text
+    'id' : str(uuid.uuid4()),
+    'to' : app.config['REPORT_CONTACT'],
+    'type': 'text/plain',
+    'content' : text
     }
 
     hdr = {
-        'Authorization':'key '+ app.config['BLIP_KEY']
+    'Authorization':'key '+ app.config['BLIP_KEY']
     }
 
     if app.config['DEBUG']:

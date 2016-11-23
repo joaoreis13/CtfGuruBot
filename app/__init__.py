@@ -16,6 +16,7 @@ print("Load config environment variables")
 application.config['BLIP_KEY'] = os.getenv("BLIP_KEY",application.config['BLIP_KEY'])
 application.config['KBFILE'] = os.getenv("KBFILE",application.config['KBFILE'])
 application.config['DEBUG'] = os.getenv("DEBUG",application.config['DEBUG'])
+application.config['REPORT_CONTACT'] = os.getenv("REPORT_CONTACT",application.config['REPORT_CONTACT'])
 if(application.config['DEBUG']):
     print("BLIP_KEY = "+application.config['BLIP_KEY'])
     print("MSG_URL = "+application.config['MSG_URL'])
@@ -23,6 +24,7 @@ if(application.config['DEBUG']):
     print("CMD_URL = "+application.config['CMD_URL'])
     print("KBFILE = "+application.config['KBFILE'])
     print("DEBUG = "+application.config['DEBUG'])
+    print("REPORT_CONTACT = "+application.config['REPORT_CONTACT'])
 
 print("Starting AIML Kernel on Bot")
 bot = aiml.Kernel()
