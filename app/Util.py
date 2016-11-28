@@ -1,5 +1,6 @@
 from flask import current_app as app
-import requests,json,uuid
+from unidecode import unidecode
+import requests,json,string
 
 def formatOutPut(text):
 
@@ -13,11 +14,17 @@ def stripCommand(text):
         return text[1:]
     return text
 
+
+def sanitizeMessage(text):
+    aux = unidecode(text)
+    aux = aux.lower()
+    return stripCommand(aux)
+
 def reportUnknownSentence(text):
 
     msg = {
 
-    'id' : str(uuid.uuid4()),
+    'id' : "",
     'to' : app.config['REPORT_CONTACT'],
     'type': 'text/plain',
     'content' : text

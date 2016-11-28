@@ -125,6 +125,12 @@
         </template>
     </category>
 
+    <category>
+        <pattern>* QUE * CHALLENGE</pattern>
+        <template>
+            <srai>QUE E CHALL</srai>
+        </template>
+    </category>
 
     <!--=========SESSION: TYPES==========-->
 
@@ -156,6 +162,57 @@
         </template>
     </category>
 
+    <category>
+        <pattern>TIPOS DE DESAFIO</pattern>
+        <template>
+            <random>
+                <li><![CDATA[Cara, a maioria se encaixa em uma das categorias: Reversing (Eng. Reversa), Crypto (Criptografia), Forensics (Forense), Miscellaneous (Diversos), Trivias (Triviais), Web Hacking, Networking (Redes), Pwnables/Exploitation (Exploração de binários),PPC (Professional Programming and Coding)]]></li>
+                <li><![CDATA[Tem vários, como em CTF pode ter qualquer coisa. Essa pagina aqui tem um overview lega:\nhttps://ctf-br.org/sobre/]]></li>
+                <li><![CDATA[Olha, que eu me lembre tem web, crypto, estaganografia, pwnables/exploitation,programming,forense, network, custom, misc...\ncada um cria a categorizacao que achar melhor.]]></li>
+            </random>
+        </template>
+    </category> 
+    <category>
+        <pattern>QUAIS OS TIPOS DE DESAFIOS</pattern>
+        <template>
+            <srai>TIPOS DE DESAFIO</srai>
+        </template>
+    </category> 
+
+    <category>
+        <pattern>QUAIS * TIPOS * DESAFIOS</pattern>
+        <template>
+            <srai>TIPOS DE DESAFIO</srai>
+        </template>
+    </category> 
+
+    <category>
+        <pattern>* TIPOS * DESAFIOS</pattern>
+        <template>
+            <srai>TIPOS DE DESAFIO</srai>
+        </template>
+    </category> 
+
+    <category>
+        <pattern>* TIPOS * DESAFIOS *</pattern>
+        <template>
+            <srai>TIPOS DE DESAFIO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TIPO DE DESAFIO</pattern>
+        <template>
+            <srai>TIPOS DE DESAFIO</srai>
+        </template>
+    </category> 
+
+    <category>
+        <pattern>* TIPO DE DESAFIO *</pattern>
+        <template>
+            <srai>TIPOS DE DESAFIO</srai>
+        </template>
+    </category>
 
     <!--=========SESSION: HOW IT WORKS==========-->
     <category>
@@ -216,6 +273,22 @@
         </template>
     </category>
 
+    <category>
+        <pattern>COMO * JOGAR *</pattern>
+        <template>
+            <srai>COMO JOGA CTF</srai>
+        </template>
+
+    </category>
+
+    <category>
+        <pattern>COMO * JOGAR</pattern>
+        <template>
+            <srai>COMO JOGA CTF</srai>
+        </template>
+        
+    </category>
+
     <!-- ==================SESSION: WHERE TO PLAY ================ -->
     <category>
         <pattern>ONDE JOGA CTF</pattern>
@@ -266,6 +339,13 @@
     </category>
 
     <category>
+        <pattern>ONDE * TREINAR</pattern>
+        <template>
+            <srai>ONDE TREINO</srai>    
+        </template>
+    </category>
+
+    <category>
         <pattern>ONDE * TREINAR *</pattern>
         <template>
             <srai>ONDE TREINO</srai>
@@ -294,6 +374,20 @@
 
     <category>
         <pattern>COMO TREINO</pattern>
+        <template>
+            <srai>TREINO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * TREINO</pattern>
+        <template>
+            <srai>TREINO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * TREINO *</pattern>
         <template>
             <srai>TREINO</srai>
         </template>
@@ -407,7 +501,21 @@
     </category>
 
     <category>
-        <pattern>QUANDO VAI TER CTF</pattern>
+        <pattern>ONDE * SABER QUANDO * CTF</pattern>
+        <template>
+            <srai>QUANDO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUANDO * CTF</pattern>
+        <template>
+            <srai>QUANDO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SABER QUANDO *</pattern>
         <template>
             <srai>QUANDO</srai>
         </template>
@@ -419,6 +527,21 @@
             <srai>ONDE</srai>
         </template>
     </category>
+
+    <category>
+        <pattern>* SABENDO * CTF</pattern>
+        <template>
+            <srai>ONDE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* QUANDO *</pattern>
+        <template>
+            <srai>ONDE</srai>
+        </template>
+    </category>
+
 
 
     <!--===========SESSION: TEAMS============-->
@@ -434,38 +557,111 @@
     </category>
 
     <category>
-        <pattern>QUAIS SAO OS PRINCIPAIS</pattern>
+        <pattern>QUAIS SAO OS PRINCIPAIS TIMES</pattern>
         <template>
-
+            <random>
+                <li><![CDATA[Bom, principaaaaaiiiisssss nao sei se e o melhor termo, mas aqui tem o ranking mundial:\nhttps://ctftime.org/stats/]]></li>
+                <li><![CDATA[Olha nao gosto de dizer que sao os principais, mas tem os lideres do ranking:\ndcua\Plaid Parliament of Pwning\nLC↯BC\nDragon Sector]]></li>
+            </random>
         </template>
     </category>
 
     <category>
-        <pattern> E DO BRASIL</pattern>
-        <template></template>
-    </category> 
+        <pattern>* PRINCIPAIS TIMES</pattern>
+        <template>
+            <srai>QUAIS OS PRINCIPAIS TIMES</srai>
+        </template>
+    </category>
 
     <category>
-        <pattern>* QUE * CHALLENGE</pattern>
+        <pattern>* PRINCIPAIS TIMES *</pattern>
         <template>
-            <srai>QUE E CHALL</srai>
+            <srai>QUAIS OS PRINCIPAIS TIMES</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PRINCIPAIS * TIMES *</pattern>
+        <template>
+            <srai>QUAIS OS PRINCIPAIS TIMES</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUAIS OS MELHORES TIMES</pattern>
+        <template>
+            <random>
+                <li><![CDATA[Isso ai e pergunta de treta! mas se quer o ranking, da uma olhada aqui:\nhttps://ctftime.org/stats/]]></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUAL O MELHOR TIME</pattern>
+        <template>
+           <srai>QUAIS OS MELHORES TIMES</srai>
         </template>
     </category>
     
     <category>
-        <pattern>MO POSSO ENTRAR EM UM TIME DE CTF</pattern>
-        <template></template>
+        <pattern>* MELHOR TIME</pattern>
+        <template>
+           <srai>QUAIS OS MELHORES TIMES</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MELHOR * TIME</pattern>
+        <template>
+           <srai>QUAIS OS MELHORES TIMES</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MELHOR * TIME *</pattern>
+        <template>
+           <srai>QUAIS OS MELHORES TIMES</srai>
+        </template>
+    </category>
+   
+    <category>
+        <pattern>COMO ENTRAR EM UM TIME</pattern>
+        <template>
+            <random>
+                <li><![CDATA[Bem, ai vai depender do time. Tem hr que vc e convidado, tem uns que fazem prova de selecao...]]></li>
+                <li><![CDATA[Voce pode procurar os times que existem e ver com eles, mas geralmente cada um segue uma regra pra aceite de novos players]]></li>
+                <li><![CDATA[E se voce montasse um time de CTF? Temos alguns no Brasil, mas seria legal ter mais times ativos.]]></li>
+            </random>
+        </template>
     </category>     
     
     <category>
-        <pattern>QUAIS OS TIPOS DE DESAFIOS</pattern>
-        <template></template>
-    </category>     
-        
+        <pattern>COMO * ENTRAR * TIME</pattern>
+        <template>
+            <srai>COMO ENTRAR EM UM TIME</srai>
+        </template>
+    </category>
+
     <category>
-        <pattern>DA PRA JOGAR PELO CELULAR</pattern>
+        <pattern>COMO * ENTRAR * TIME *</pattern>
+        <template>
+            <srai>COMO ENTRAR EM UM TIME</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ENTRAR * TIME *</pattern>
+        <template>
+            <srai>COMO ENTRAR EM UM TIME</srai>
+        </template>
+    </category>
+
+    <!--=================SESSION: MISC QUESTIONS =====================-->
+    <category>
+        <pattern>CELULAR</pattern>
         <template></template>
     </category>     
+
 
     <category>
         <pattern>COMO SAO CONTABILIZADOS OS PONTOS</pattern>

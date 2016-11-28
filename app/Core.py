@@ -11,7 +11,7 @@ import requests,json,uuid
 def processMessage(content,bot):
 
     msgType = content['type']
-    msgText = content['content']
+    msgText = Util.sanitizeMessage( content['content'] )
     msgFrom = content['from']
     session = msgFrom.split('@')[0]
 

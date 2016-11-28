@@ -1,6 +1,6 @@
 #from app import Util
-import aiml
-import sys
+import aiml,sys
+from unidecode import unidecode
 
 def formatOutPut(text):
 
@@ -14,6 +14,11 @@ def stripCommand(text):
         return text[1:]
     return text
 
+def sanitizeMessage(text):
+    aux = unidecode(text)
+    aux = aux.lower()
+    return stripCommand(aux)
+
 def main():
 
     #create and configurate bot knowledbase
@@ -26,7 +31,7 @@ def main():
         if question == 'quit':
             return 0
 
-        response = ctfbot.respond(question)
+        response = ctfbot.respond(sanitizeMessage(question))
 
  #       print( Util.formatOutPut(response))
         print(formatOutPut(response))
