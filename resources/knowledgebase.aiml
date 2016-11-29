@@ -132,6 +132,52 @@
         </template>
     </category>
 
+
+    <category>
+        <pattern>PONTOS</pattern>
+        <template>
+            <random>
+                <li><![CDATA[Ai depende do CTF, mas o normal e cada chall ter uma pontuacao definida pra ela com base na dificuldade]]></li>
+                <li><![CDATA[Vishhh... em cada evento criam uma forma de contabilizar isso. O mais comum sao pontos fixos pra cada chall baseado no nivel de dificuldade dela]]></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO SAO CONTABILIZADOS OS PONTOS</pattern>
+        <template>
+            <srai>PONTOS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO * CONTABILIZADOS * PONTOS</pattern>
+        <template>
+            <srai>PONTOS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CONTABILIZADOS * PONTOS * </pattern>
+        <template>
+            <srai>PONTOS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CONTA * PONTOS *</pattern>
+        <template>
+            <srai>PONTOS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MARCA * PONTOS *</pattern>
+        <template>
+            <srai>PONTOS</srai>
+        </template>
+    </category>
+
     <!--=========SESSION: TYPES==========-->
 
     <category>
@@ -352,6 +398,12 @@
         </template>
     </category>
 
+    <category>
+        <pattern>* ONDE * TREINAR *</pattern>
+        <template>
+            <srai>ONDE TREINO</srai>
+        </template>
+    </category>
     <!--================SESSION: HOW TO PRACTICE===============-->
     <category>
         <pattern>TREINO</pattern>
@@ -659,15 +711,35 @@
     <!--=================SESSION: MISC QUESTIONS =====================-->
     <category>
         <pattern>CELULAR</pattern>
-        <template></template>
+        <template>
+            <random>
+                <li><![CDATA[Olha, maluco... eu nao recomendaria, mas com algum esforço deve dar sim...]]></li>
+                <li><![CDATA[Competitivamente nunca vi, mas um celular hj em dia e um computador portatil. Tenta ai, dps me conta o resultado! :P]]></li>
+                <li><![CDATA[SLK! tem que ser mto hackudo pra conseguir isso. Na boa, usa um PC msm]]></li>
+            </random>
+        </template>
     </category>     
 
-
     <category>
-        <pattern>COMO SAO CONTABILIZADOS OS PONTOS</pattern>
-        <template></template>
+        <pattern>* JOGAR * CELULAR</pattern>
+        <template>
+            <srai>CELULAR</srai>
+        </template>
     </category>
 
+    <category>
+        <pattern>* JOGO * CELULAR</pattern>
+        <template>
+            <srai>CELULAR</srai>
+        </template>
+    </category>   
+
+    <category>
+        <pattern>* JOGA * CELULAR</pattern>
+        <template>
+            <srai>CELULAR</srai>
+        </template>
+    </category>
 
     <category>
         <pattern>

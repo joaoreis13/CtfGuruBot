@@ -1,6 +1,6 @@
 from flask import current_app as app
 from . import Util
-import requests,json,uuid
+import requests,json
 
 """
     Core.processMessage(content )
@@ -30,7 +30,7 @@ def processMessage(content,bot):
 
     msg = {
 
-        'id' : str(uuid.uuid4()),
+        'id' :"",
         'to' : content['from'],
         'type': 'text/plain',
         'content' : text
